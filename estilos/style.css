@@ -44,7 +44,9 @@ iframe#tela {
 }
 
 section.redes-sociais {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 section.redes-sociais img {
@@ -61,4 +63,29 @@ section.redes-sociais img:hover {
     transform: translate(-4px, -4px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
     transition: transform .4s;
+}
+
+@media screen and (max-width: 420px) {
+    section.telefone {
+        position: absolute;
+        top: 50%;
+        left: 42%;
+    }
+
+    section.redes-sociais {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    section.redes-sociais img {
+        margin: 8px 12px 2px;
+    }
+
+    section.redes-sociais img:hover {
+        border: 2px solid rgba(255, 255, 255, 0.795);
+        transform: translate(-2px, -2px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.800);
+        transition: transform .4s;
+    }
 }
